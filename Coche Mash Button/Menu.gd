@@ -5,6 +5,7 @@ func _ready():
 
 
 func _on_Button_pressed():
+	Global.score = 0
 	get_tree().change_scene("res://Main.tscn")
 
 

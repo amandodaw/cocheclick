@@ -8,3 +8,4 @@ func _on_FinishLine_body_entered(_body):
 func _on_ScoreTimer_timeout():
 	Global.score += 0.01
 	$CenterContainer/Label.text = "Tiempo: " + str(Global.score)
+	get_node("Car").increase_gravity()
